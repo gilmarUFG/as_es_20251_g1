@@ -1,43 +1,40 @@
-# Requisitos de Software
+# Arquitetura de Software
 
 Problema: Problemas de gerenciamento de pedidos e reservas em um restaurante
 
 
 ## Requisitos Funcionais:
  	
-O sistema deve permitir que os clientes façam pedidos diretamente pelo aplicativo ou pelo site.
+- RF1: O usuário deve poder escolher a aparência da interface, tendo as opções de selecionar entre modo claro, escuro e de alto contraste.
 
-O sistema deve permitir o acompanhamento do status do pedido em tempo real.
+- RF2: O sistema deve enviar notificações automáticas para o cliente via SMS ou e-mail sempre que o status do pedido ou reserva for alterado (ex: "Pedido em "Preparação", "Pedido Enviado", "Reserva Confirmada").
 
-O cliente deve conseguir realizar a reserva no restaurante.
+- RF3: O usuário deve buscar, através de um campo de busca, o nome do produto desejado.
 
-O usuário deve poder visualizar os itens disponíveis no cardápio, juntamente com uma descrição do produto.
+- RF4: O sistema deve permitir que o cliente adicione observações ou preferências (por exemplo, "sem cebola", "pedido sem sal") aos itens do cardápio ao realizar o pedido.
 
-O sistema deve permitir que os clientes realizem pagamentos via cartão de crédito, débito, dinheiro ou PIX.
-
-## Requisitos Não Funcionais:
-
-Segurança: O software deve oferecer segurança seguindo a LGPD com relação a dados sensíveis de pagamento pelo sistema, impedindo fraudes e vazamento de dados.
-
-O sistema deve processar e exibir a confirmação de um pedido em até 2 segundos após a sua submissão.
-
-O sistema deve realizar backups automáticos dos dados críticos (como pedidos, reservas e transações financeiras) a cada 12 horas e manter esses backups por um período mínimo de 30 dias. Dessa forma, em caso de falhas ou desastres, será possível restaurar rapidamente a integridade e disponibilidade das informações.
-
-O sistema deve ser escalável para suportar um aumento na demanda em horários de pico.
-
-O software deve ter uma interface responsiva, funcionando tanto para web quanto para mobile.
+- RF5: O sistema deve gerar uma comanda digital para cada mesa ou cliente, associando os itens pedidos a essa comanda.
 
 
-## Regras de Negócio:
 
-Só serão aceitos pedidos de delivery em um raio de 10km de distância do restaurante;
+## Requisitos de Qualidade:
 
-O pagamento de um pedido online só será confirmado após a aprovação da transação pelo sistema financeiro.
+- RQ1: O tempo de resposta para a busca de produtos não deve ultrapassar 1 segundo, garantindo uma experiência ágil e eficiente para o usuário. 
 
-O sistema deverá implementar um programa de fidelidade onde, a cada 5 pedidos concluídos, o cliente acumula pontos. 
+- RQ2:  O sistema deve garantir a entrega de 99% das notificações em até 5 segundos após a mudança de status do pedido.
 
-Esses pontos poderão ser trocados por descontos ou brindes em futuros pedidos, incentivando a repetição de compras e aumentando a satisfação do cliente.
+- RQ3:  A interface do software deve ser acessível a pessoas de baixa visão.
 
-As reservas devem ser confirmadas até 15 minutos antes do horário agendado; caso contrário, serão canceladas automaticamente.
+- RQ4: O sistema deve ser projetado para ser intuitivo, com uma interface de usuário amigável e fácil de navegar, visando uma experiência sem fricções para o usuário.
 
-Pedidos para entrega terão uma taxa calculada com base na distância do restaurante, sendo isentos para distâncias inferiores a 2 km.
+- RQ5: O sistema deve garantir que as comandas digitais sejam armazenadas de forma segura e resiliente, garantindo que nenhum pedido seja perdido em caso de falha no sistema ou queda de conexão.
+
+## Requisitos funcionais x Requisitos Não Funcionais
+
+|Requisito Funcional|Requisito Não Funcional|
+|---|---|
+|RF1|RQ3|
+|RF2|RQ2|
+|RF3|RQ1|
+|RF5|RQ5|
+|RF4|RQ4|
