@@ -1,10 +1,12 @@
+# Atividade Prática 1 - Aula 2 - 17/03/2025
+
 # Arquitetura de Software
 
 Problema: Problemas de gerenciamento de pedidos e reservas em um restaurante
 
 
 ## Requisitos Funcionais:
- 	
+
 - RF1: O usuário deve poder escolher a aparência da interface, tendo as opções de selecionar entre modo claro, escuro e de alto contraste.
 
 - RF2: O sistema deve enviar notificações automáticas para o cliente via SMS ou e-mail sempre que o status do pedido ou reserva for alterado (ex: "Pedido em "Preparação", "Pedido Enviado", "Reserva Confirmada").
@@ -19,7 +21,7 @@ Problema: Problemas de gerenciamento de pedidos e reservas em um restaurante
 
 ## Requisitos de Qualidade:
 
-- RQ1: O tempo de resposta para a busca de produtos não deve ultrapassar 1 segundo, garantindo uma experiência ágil e eficiente para o usuário. 
+- RQ1: O tempo de resposta para a busca de produtos não deve ultrapassar 1 segundo, garantindo uma experiência ágil e eficiente para o usuário.
 
 - RQ2:  O sistema deve garantir a entrega de 99% das notificações em até 5 segundos após a mudança de status do pedido.
 
