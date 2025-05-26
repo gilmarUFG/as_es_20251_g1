@@ -1,0 +1,14 @@
+@startuml RF05_Chat
+actor Medico
+actor Paciente
+participant "FrontEnd (Médico)" as FrontMedico
+participant "FrontEnd (Paciente)" as FrontPaciente
+participant "Communication Service" as ChatService
+
+Medico -> FrontMedico : Digita mensagem
+FrontMedico -> ChatService : POST /mensagem (conteúdo)
+
+ChatService -> FrontPaciente : PUSH /mensagem (conteúdo)
+FrontPaciente --> Paciente : Exibe mensagem recebida
+
+@enduml

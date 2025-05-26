@@ -1,0 +1,15 @@
+@startuml RF05_Anotacoes
+actor Medico
+participant "FrontEnd" as Frontend
+participant "Medical Notes Service" as NotesService
+database "Database" as DB
+
+Medico -> Frontend : Abre tela de anotações
+Medico -> Frontend : Escreve anotação
+Frontend -> NotesService : POST /anotacao (conteúdo)
+NotesService -> DB : Salva anotação
+DB --> NotesService : Confirmação
+NotesService --> Frontend : Anotação salva
+Frontend --> Medico : Confirmação de anotação
+
+@enduml

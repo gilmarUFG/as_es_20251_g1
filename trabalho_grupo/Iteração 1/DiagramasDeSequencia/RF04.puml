@@ -1,0 +1,20 @@
+@startuml RF04_Interacao_VR
+actor Medico
+actor Paciente
+participant "FrontEnd (Médico)" as FrontMedico
+participant "FrontEnd (Paciente)" as FrontPaciente
+participant "VR Interaction Service" as VRService
+
+Medico -> FrontMedico : Acessa sessão VR
+Paciente -> FrontPaciente : Acessa sessão VR
+
+FrontMedico -> VRService : Conecta sessão
+FrontPaciente -> VRService : Conecta sessão
+
+VRService -> FrontMedico : Confirma conexão
+VRService -> FrontPaciente : Confirma conexão
+
+FrontMedico <-> VRService : Interação VR
+FrontPaciente <-> VRService : Interação VR
+
+@enduml

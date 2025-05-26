@@ -1,0 +1,23 @@
+@startuml RF03_Envio_Documentos
+actor Paciente
+participant "FrontEnd" as Frontend
+participant "Auth Service" as Auth
+participant "Document Service" as DocService
+database "Object Storage" as Storage
+
+Paciente -> Frontend : Efetua login
+Frontend -> Auth : POST /login
+Auth --> Frontend : Token
+
+Paciente -> Frontend : Envia exame/documento
+Frontend -> DocService : POST /upload (arquivo + token)
+DocService -> Auth : Verifica token
+Auth --> DocService : Token válido
+
+DocService -> Storage : Armazena arquivo
+Storage --> DocService : Confirmação
+
+DocService --> Frontend : Confirmação de envio
+Frontend --> Paciente : Documento enviado com sucesso
+
+@enduml

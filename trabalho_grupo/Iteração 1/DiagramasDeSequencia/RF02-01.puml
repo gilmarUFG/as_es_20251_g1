@@ -1,0 +1,23 @@
+@startuml RF02_Agendamento_Consulta_VR
+actor Usuario
+participant "FrontEnd" as Frontend
+participant "Auth Service" as Auth
+participant "Scheduling Service" as Schedule
+database "Database" as DB
+
+Usuario -> Frontend : Efetua login
+Frontend -> Auth : POST /login (credenciais)
+Auth --> Frontend : Token de autenticação
+
+Usuario -> Frontend : Solicita agendar consulta
+Frontend -> Schedule : POST /agendar (dados consulta + token)
+Schedule -> Auth : Verifica token
+Auth --> Schedule : Token válido
+
+Schedule -> DB : Insere agendamento
+DB --> Schedule : Confirmação
+
+Schedule --> Frontend : Confirmação de agendamento
+Frontend --> Usuario : Consulta agendada com sucesso
+
+@enduml

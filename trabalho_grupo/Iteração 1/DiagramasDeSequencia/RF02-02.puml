@@ -1,0 +1,23 @@
+@startuml RF02_Participacao_Consulta_VR
+
+actor Usuario
+participant "FrontEnd" as Frontend
+participant "VR Interaction Service" as VRService
+participant "Communication Service" as ChatService
+
+Usuario -> Frontend : Acessa sessão de consulta
+Frontend -> VRService : Conecta sessão VR (WebSocket)
+
+VRService --> Frontend : Sessão estabelecida
+
+Usuario -> Frontend : Interage no ambiente imersivo
+Frontend <-> VRService : Troca de dados VR em tempo real
+
+Usuario -> Frontend : Envia mensagem ou anotação
+Frontend -> ChatService : POST /mensagem (dados)
+
+ChatService --> Frontend : Confirmação de envio
+
+Frontend --> Usuario : Feedback de interação (movimentação, mensagens)
+
+@enduml
