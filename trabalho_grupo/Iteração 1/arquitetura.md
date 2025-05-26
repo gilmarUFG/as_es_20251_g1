@@ -30,4 +30,3 @@ Justificativas técnicas para a utilização de Unity + OpenXR:
 - WebSocket / REST / gRPC:	Comunicação com o backend em tempo real ou via APIs.
 - Microsserviços:	Java (Spring Boot).
 - Banco de dados relacional: PostgreSQL.
-- 
