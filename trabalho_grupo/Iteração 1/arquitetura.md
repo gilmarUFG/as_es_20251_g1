@@ -21,4 +21,13 @@ Justificativas técnicas para a utilização de Unity + OpenXR:
 - Suporte a múltiplas plataformas.
 - Permite interfaces naturais: interação via gestos, voz, dispositivos de controle ou touch 3D.
 - Compatível com dispositivos como webcams, câmeras 3D ou sensores específicos.
-- Integração Fácil com Backend via REST e WebSocket gRPC conectar aos microsserviços.
+- Integração Fácil com Backend via REST, WebSocket e gRPC conexão com microsserviços.
+
+## Resumo da stack tecnológica:
+
+- Unity 3D (C#):	Motor gráfico para interface 3D/RA desktop com alta performance.
+- OpenXR:	Padrão aberto para integração de dispositivos RA/XR.
+- WebSocket / REST / gRPC:	Comunicação com o backend em tempo real ou via APIs.
+- Microsserviços:	Java (Spring Boot).
+- Banco de dados relacional: PostgreSQL.
+- 
