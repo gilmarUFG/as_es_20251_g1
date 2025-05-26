@@ -1,0 +1,94 @@
+@startuml SistemaConsultaMedicaRA
+
+skinparam componentStyle uml2
+skinparam monochrome true
+skinparam nodesep 20
+skinparam ranksep 20
+
+' === Componentes Principais ===
+package "Frontend (Realidade Aumentada)" {
+    [Unity 3D Client] as unity
+    [OpenXR Integration] as openxr
+    unity -- openxr
+}
+
+package "Backend (Microsserviços)" {
+    [API Gateway] as gateway
+
+    package "Serviço de Autenticação" {
+        [Auth Service] as auth
+        [Identity Provider] as idp
+        auth -- idp
+    }
+
+    package "Serviço de Consultas" {
+        [Consulta Service] as consulta
+        [Agendamento Module] as agendamento
+        consulta -- agendamento
+    }
+
+    package "Serviço de RA" {
+        [RA Service] as ra
+        [3D Model Processor] as model3d
+        ra -- model3d
+    }
+
+    package "Serviço de Prontuários" {
+        [Prontuario Service] as prontuario
+        [Relatorios Module] as relatorios
+        prontuario -- relatorios
+    }
+
+    package "Serviço de Notificações" {
+        [Notification Service] as notificacao
+        [WebSocket Server] as ws
+        notificacao -- ws
+    }
+}
+
+package "Banco de Dados" {
+    [PostgreSQL] as postgres
+    [Redis Cache] as redis
+}
+
+' === Conexões ===
+unity --> gateway : REST/gRPC\nWebSocket
+openxr --> ra : Dados RA\n(stream)
+
+gateway --> auth
+gateway --> consulta
+gateway --> ra
+gateway --> prontuario
+gateway --> notificacao
+
+auth --> postgres : Auth Data
+consulta --> postgres : Consultas Data
+ra --> postgres : Modelos 3D
+prontuario --> postgres : Prontuários
+notificacao --> redis : Cache
+
+consulta ..> notificacao : Eventos
+prontuario ..> notificacao : Eventos
+
+' === Legenda ===
+note top of postgres
+  <b>Armazenamento Principal:</b>
+  - PostgreSQL para dados estruturados
+  - Redis para cache e mensagens
+end note
+
+note right of unity
+  <b>Client RA:</b>
+  - Unity 3D com OpenXR
+  - Suporte multiplataforma
+  - Alta performance gráfica
+end note
+
+note left of gateway
+  <b>API Gateway:</b>
+  - Roteamento de requisições
+  - Balanceamento de carga
+  - Circuit breaker
+end note
+
+@enduml
