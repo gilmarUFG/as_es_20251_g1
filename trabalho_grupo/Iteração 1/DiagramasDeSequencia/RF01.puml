@@ -1,18 +1,18 @@
-@startuml RF01_CadastroUsuario
-actor Usuário
-participant "Frontend" as FE
-participant "Backend" as BE
-database "Database" as DB
+    @startuml RF01_CadastroUsuario
+    actor Usuário
+    participant "Frontend" as FE
+    participant "Backend" as BE
+    database "Database" as DB
 
-Usuário -> FE: Preenche formulário de cadastro
-FE -> BE: Envia dados cadastrais (tipo, dados pessoais)
-BE -> DB: Verifica se usuário já existe
-alt usuário não existe
-    BE -> DB: Armazena novo usuário
-    BE -> FE: Confirmação de cadastro
-    FE -> Usuário: Exibe mensagem de sucesso
-else usuário já existe
-    BE -> FE: Retorna erro
-    FE -> Usuário: Exibe mensagem de erro
-end
-@enduml
+    Usuário -> FE: Preenche formulário de cadastro
+    FE -> BE: Envia dados cadastrais (tipo, dados pessoais)
+    BE -> DB: Verifica se usuário já existe
+    alt usuário não existe
+        BE -> DB: Armazena novo usuário
+        BE -> FE: Confirmação de cadastro
+        FE -> Usuário: Exibe mensagem de sucesso
+    else usuário já existe
+        BE -> FE: Retorna erro
+        FE -> Usuário: Exibe mensagem de erro
+    end
+    @enduml
