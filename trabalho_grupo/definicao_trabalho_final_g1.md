@@ -28,8 +28,8 @@
 
 ### 2° Iteração
 
-- RF06 - O sistema deve permitir que o médico visualize imagens e vídeos de exames médicos em 3D durante a consulta.
--  RF07 - O sistema deve ser capaz de gerar um autenticador para as receitas virtuais.
-- RF08 - O paciente deve ter acesso a um repositório, dentro da plataforma, com seus laudos, prescrições, exames e orientações recebidas nas consultas.
-- RF09 - As teleconsultas devem ser gravadas para auditorias, em casos de suspeitas de negligência médica.
-- RF10 - O sistema deve permitir que o paciente avalie o médico que o atendeu.
+   - RF06 - O sistema deve permitir que o médico visualize imagens e vídeos de exames médicos em 3D durante a consulta.
+   -  RF07 - O sistema deve ser capaz de gerar um autenticador para as receitas virtuais.
+   - RF08 - O paciente deve ter acesso a um repositório, dentro da plataforma, com seus laudos, prescrições, exames e orientações recebidas nas consultas.
+   - RF09 - As teleconsultas devem ser gravadas para auditorias, em casos de suspeitas de negligência médica.
+   - RF10 - O sistema deve permitir que o paciente avalie o médico que o atendeu.
