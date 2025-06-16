@@ -1,0 +1,14 @@
+@startuml RF08_Repositorio_Paciente
+actor Paciente
+participant "FrontEnd" as FE
+participant "Backend" as BE
+database "Repositório de Documentos" as Repo
+
+Paciente -> FE : Solicita acesso ao repositório
+FE -> BE : Solicita lista de documentos
+BE -> Repo : Consulta documentos do paciente
+Repo --> BE : Retorna documentos
+BE --> FE : Retorna lista de arquivos
+FE -> Paciente : Exibe documentos ao paciente
+
+@enduml

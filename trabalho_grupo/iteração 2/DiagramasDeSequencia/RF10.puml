@@ -1,0 +1,15 @@
+@startuml RF10_Avaliacao_Medico
+actor Paciente
+participant "FrontEnd" as FE
+participant "Backend" as BE
+database "Banco de Avaliações" as DB
+
+Paciente -> FE : Acessa histórico de consultas
+Paciente -> FE : Escolhe médico para avaliar
+FE -> BE : Envia avaliação
+BE -> DB : Armazena avaliação
+DB --> BE : Confirma armazenamento
+BE --> FE : Confirmação da avaliação
+FE -> Paciente : Exibe mensagem de sucesso
+
+@enduml

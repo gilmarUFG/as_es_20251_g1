@@ -1,0 +1,23 @@
+@startuml RF09_Gravacao_Teleconsulta
+actor Medico
+actor Paciente
+participant "FrontEnd (Médico)" as FEM
+participant "FrontEnd (Paciente)" as FEP
+participant "Consulta Service" as Consulta
+participant "Gravador de Sessão" as Gravador
+database "Armazenamento de Gravações" as Storage
+
+Medico -> FEM : Inicia teleconsulta
+Paciente -> FEP : Acessa a sessão
+
+FEM -> Consulta : Solicita início da sessão
+FEP -> Consulta : Conecta à sessão
+
+Consulta -> Gravador : Inicia gravação
+Gravador -> Storage : Armazena dados da sessão
+Storage --> Gravador : Confirma gravação ativa
+
+Consulta -> FEM : Sessão em andamento
+Consulta -> FEP : Sessão em andamento
+
+@enduml

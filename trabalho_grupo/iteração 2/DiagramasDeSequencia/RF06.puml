@@ -1,0 +1,17 @@
+@startuml RF06_Visualizacao_Exames_3D
+actor Medico
+participant "FrontEnd" as FE
+participant "Backend" as BE
+participant "3D Exame Service" as Exame3D
+database "Storage 3D" as Storage
+
+Medico -> FE : Solicita visualização de exame 3D
+FE -> BE : Solicita dados do exame
+BE -> Exame3D : Requisita exame 3D do paciente
+Exame3D -> Storage : Recupera arquivos 3D
+Storage --> Exame3D : Retorna arquivos
+Exame3D --> BE : Retorna dados 3D
+BE --> FE : Envia exame para exibição
+FE -> Medico : Exibe exame em 3D
+
+@enduml

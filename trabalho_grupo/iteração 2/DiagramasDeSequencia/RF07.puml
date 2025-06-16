@@ -1,0 +1,14 @@
+@startuml RF07_Geracao_Autenticador_Receita
+actor Medico
+participant "FrontEnd" as FE
+participant "Backend" as BE
+participant "Autenticador Service" as AuthService
+
+Medico -> FE : Preenche receita virtual
+FE -> BE : Envia receita para processamento
+BE -> AuthService : Solicita geração de autenticador
+AuthService --> BE : Retorna autenticador
+BE -> FE : Retorna receita com autenticador
+FE -> Medico : Exibe receita autenticada
+
+@enduml
