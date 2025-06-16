@@ -1,0 +1,25 @@
+@startuml
+title Casos de Uso – Sistema Telemedicina VR (2ª Iteração)
+left to right direction
+
+actor Paciente
+actor Médico
+actor Administrador
+
+rectangle "Sistema Telemedicina VR" {
+  (RF06: Visualizar exames médicos em 3D) as UC6
+  (RF07: Gerar autenticador para receitas) as UC7
+  (RF08: Acessar repositório de documentos) as UC8
+  (RF09: Gravar teleconsultas para auditoria) as UC9
+  (RF10: Avaliar médico) as UC10
+}
+
+Médico --> UC6
+Médico --> UC7
+
+Paciente --> UC8
+Paciente --> UC10
+
+Administrador --> UC9
+
+@enduml
