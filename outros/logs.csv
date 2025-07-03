@@ -1,0 +1,33 @@
+Commit;Author;Date;Message
+729eda8d9277ef8d7af03856e5bb13ca87b6d96b;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Mon Jun 30 10:17:35 2025 -0300;update repository
+39aaa45091970bf7c4b2552579fd130982ec2c87 Merge:6e8eaca 6f1b9da;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Sun Jun 29 12:36:53 2025 -0300;Merge branch 'estudante'
+6e8eaca2b06150950bd8acae435a4b2ed65d86b3;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Sun Jun 29 12:36:36 2025 -0300;update repository
+6f1b9dad18d7984c63c42dce6e04d92edc40ce66;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Wed Jun 25 22:35:31 2025 -0300;add slides
+1b9e257fccadd89c5da66773c8da5332e04adb2f;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Wed Jun 25 22:30:19 2025 -0300;add slides
+fb1a92ce7d99a0333f99b6d5c425989cc5fdf29a;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Wed Jun 25 20:11:45 2025 -0300;corrigindo atividades
+294926331fd28cf4a06016932bb37e7fdbe275fa;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Mon Jun 16 19:59:47 2025 -0300;criação do documento final arquitetural
+2c956f5563b51d5ae82e54c38a80eaba332ff4de;ALINE NUNES DOS SANTOS <alinenunes21@hotmail.com>;Mon Jun 16 17:54:08 2025 -0300;feat: adição do diagrama de casos de uso
+83438c282526ba4e68f08c9b3af8dc07595f7879;StephanyMil <stephanymilhomem25@gmail.com>;Mon Jun 16 07:38:55 2025 -0300;Add the sequence diagrams of the 2nd iteration
+be71b6cb7244c170680044700595fe764188bb1a;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Sun Jun 15 18:02:04 2025 -0300;adição de configurações arquiteturais de segurança
+b18be7f0eebecdab294d8a02f987dfe6fcc5b5e0;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Mon May 26 21:02:10 2025 -0300;criação e alinhamento do documento arquitetural
+28a8e991cf6a34589835de8d54c60d5bef7f54eb;Aline Lima <108772037+aaaaline@users.noreply.github.com>;Mon May 26 20:36:06 2025 -0300;Add files via upload
+a53cda728238fda67333af12fe51efeac1838655 Merge:8079b38 677af4d;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Mon May 26 19:11:13 2025 -0300;Merge branch 'main' into estudante
+677af4deded0f4ab623a8eabecc86d94b45922e1;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Mon May 26 19:07:44 2025 -0300;update repository
+8079b383e3a50f56c63a413d9b61fd4c77b7c70e;Aline Lima <108772037+aaaaline@users.noreply.github.com>;Mon May 26 18:31:51 2025 -0300;Update arquitetura.md
+b1287112f48bdfe7bb73fdeffefdbb88ee2a66a4;Aline Lima <108772037+aaaaline@users.noreply.github.com>;Mon May 26 18:31:14 2025 -0300;Update arquitetura.md
+fc029f430015ce8584e8e0634a1fbbad40df6abc;Aline Lima <108772037+aaaaline@users.noreply.github.com>;Mon May 26 18:24:37 2025 -0300;Update arquitetura.md
+3c1cb323fb336f76a970aff049a831f1b3d05a3f;Aline Lima <108772037+aaaaline@users.noreply.github.com>;Mon May 26 18:20:05 2025 -0300;Add files via upload
+3f5bf8baea90e3784224ab7b866d1d1724c96266;Stephany Milhomem <stephanymilhomem25@gmail.com>;Mon May 26 00:40:14 2025 -0300;Add Diagramas de sequencia
+ba1770e1b33a6eb0edaa7e3d68e1540ba80a7ba8;alinenunes21 <alinenunes21@hotmail.com>;Sun May 25 17:46:15 2025 -0300;Atualiza diagrama de casos de uso.
+d78e6e1b4da9b85334bcb46e334315b78ba1473e;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Wed May 7 11:36:51 2025 -0300;Add files via upload
+08707ab95caf92192123bbec2e1e7afcc8be14a8;Stephany Milhomem <110176560+StephanyMil@users.noreply.github.com>;Wed Apr 30 22:46:53 2025 +0000;Create definicao_trabalho_final_g1.md
+9d8a304d3b29811d5d45d235d1e131289130bffb;Stephany Milhomem <110176560+StephanyMil@users.noreply.github.com>;Mon Apr 28 00:41:31 2025 +0000;Add Atividade 4
+252a3449770609a9d13854d2a3119b8dbcabef83;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Sat Apr 19 12:44:07 2025 -0300;update repository
+ae39f45a623c8b25d6006ddccff4c604022e12d7;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Thu Apr 17 19:01:37 2025 -0300;update repository
+dd2284c04fe9c3c2e5c2f030c4d3e0f19150225b;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Mon Mar 24 21:41:20 2025 -0300;Create ap-aula03.md
+16ce253329e7ae857e83476002d95cdaa72f1e3b;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Mon Mar 17 21:24:30 2025 -0300;Rename atv1.md to ap-aula02.md
+40dd1391e488faac8c537a29bc72f6fc61ac0504;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Mon Mar 17 21:23:05 2025 -0300;feat: criação da matriz de requisitos
+30a75bd784ffe4d8e8d1d8fcea0b00873681e825;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Mon Mar 17 21:21:14 2025 -0300;feat: criação da matriz de requisitos
+4f6fa623849ebda3c543fe4ed5a2d076e8dbf2bf;Ayumi Hamano <98706488+AyuHamano@users.noreply.github.com>;Mon Mar 17 20:49:11 2025 -0300;Update README.md
+ac05914fe64f66cbf00f5bbc80f8801e292e4d62;Gilmar Ferreira Arantes <gilmar.arantes@ufg.br>;Fri Feb 28 17:04:45 2025 -0300;Update README.md file.
+3dfe54dfbb1fce0c5eb9eb044e6531531394aa7d;Gilmar Ferreira Arantes <130784207+gilmarUFG@users.noreply.github.com>;Fri Feb 28 14:24:10 2025 -0300;Initial commit
